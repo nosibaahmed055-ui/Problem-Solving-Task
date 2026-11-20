@@ -1,0 +1,13 @@
+ Scenario 1: Student Pass or Fail  Pseudocode
+
+ Pseudocode
+START
+  PRINT "Enter student grade "
+  INPUT grade
+
+  IF grade >= 50 THEN
+    PRINT "Pass"
+  ELSE
+    PRINT "Fail"
+  ENDIF
+ END
