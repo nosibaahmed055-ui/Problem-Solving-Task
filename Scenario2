@@ -1,0 +1,52 @@
+Scenario 2 
+
+1) Input & Output:
+Input:
+- std_num (student seat number)
+- reg_list  (list of registered seat numbers)
+
+Output:
+- message saying Allowed or Not Allowed
+
+2) Conditions & Decisions:
+- if std_num is found in reg_list -> let student enter
+- if std_num is not in reg_list -> dont let student enter
+
+3) Algorithm:
+1- start
+2- get registered list and student seat number.
+3- check if student number exists in the list.
+4- if yes, print Allowed.
+5- if no, print Not Allowed
+6- end
+
+4) Pseudocode:
+BEGIN
+  READ reg_list
+  READ std_num
+  found = false
+
+  FOR each num in reg_list
+    IF num == std_num THEN
+       found = true
+       BREAK
+    ENDIF
+  ENDFOR
+
+  IF found == true THEN
+    PRINT "Allowed"
+  ELSE
+    PRINT "Not Allowed"
+  ENDIF
+END
+
+5) Test Cases:
+let reg_list = [15, 22, 30, 41]
+
+Case 1:
+Input: std_num = 22
+Output: Allowed
+
+Case 2:
+Input: std_num = 19
+Output: Not Allowed
